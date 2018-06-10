@@ -1,12 +1,13 @@
 import React from 'react';
 
 export default class AddOption extends React.Component {
+  // ES6 syntax to declare constructor properties
+  state = {
+    error: undefined
+  };
   constructor(props) {
     super(props);
     this.handleAddOption = this.handleAddOption.bind(this);
-    this.state = {
-      error: undefined
-    }
   }
 
   handleAddOption(e) {
